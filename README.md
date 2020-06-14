@@ -25,7 +25,7 @@ You can just copy the Dockerfile into your projects directory and change the Doc
 ## Building your container
 Just run the following command from your projects directory in the terminal:
 ```
-docker build -t quayau/reproducible_paper_with_docker_and_rstudio .
+docker build -t your_projects_name .
 ```
 With the `-t`-option you can name your container as you wish. The build process will take some time.
 
