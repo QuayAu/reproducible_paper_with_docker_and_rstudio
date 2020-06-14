@@ -50,3 +50,9 @@ To stop all running containers, run
 ```
 docker stop $(docker ps -a -q)
 ```
+
+## Delete local images
+To delete all local images, run
+```
+docker stop $(docker ps -a -q)
+```
