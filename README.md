@@ -20,8 +20,11 @@ Dockerhub is like GitHub for Docker containers. You can pull openly available do
 
 ## Dockerfile
 The Dockerfile defines what your virtual machine contains. For our purpose, we will use an openly available R-Studio container and install R-packages on there. We will push this container on dockerhub to make this available for colleagues to use.
+You can just copy the Dockerfile into your projects directory and change the Dockerfile to install the packages you need.
 
-
-
-
-
+## Building your container
+Just run the following command from your projects directory in the terminal:
+```
+docker build -t my_container .
+```
+With the `-t`-option you can name your container as you wish. 
