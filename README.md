@@ -41,5 +41,8 @@ docker push your_projects_name
 I have pushed this image under the name `quayau/reproducible_paper_with_docker_and_rstudio`, available here https://hub.docker.com/repository/docker/quayau/reproducible_paper_with_docker_and_rstudio
 
 ## I've built an image, what now?
-I ha
-
+You can run this container using following command (see https://hub.docker.com/r/rocker/rstudio for more details):
+```
+docker run --rm -p 8787:8787 -e PASSWORD=yourpasswordhere quayau/reproducible_paper_with_docker_and_rstudio
+```
+Visit `localhost:8787` in your browser and log in with username `rstudio` and the password you set.
