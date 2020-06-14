@@ -28,9 +28,7 @@ Just run the following command from your projects directory in the terminal:
 docker build -t your_projects_name .
 ```
 With the `-t`-option you can name your image as you wish. The build process will take some time.
-
-## .dockerignore
-Like in the `.gitignore` file, you can define which files you want to ignore during the build process with the `.dockerignore` file.
+All files in your projects directory, which are not ignored by .dockerignore, will also be copied into the container.
 
 ## Share your image
 Push your image to dockerhub with:
@@ -46,3 +44,9 @@ You can run this container using following command (see https://hub.docker.com/r
 docker run --rm -p 8787:8787 -e PASSWORD=yourpasswordhere quayau/reproducible_paper_with_docker_and_rstudio
 ```
 Visit `localhost:8787` in your browser and log in with username `rstudio` and the password you set.
+
+## Stop running containers
+To stop all running containers, run
+```
+docker stop $(docker ps -a -q)
+```
