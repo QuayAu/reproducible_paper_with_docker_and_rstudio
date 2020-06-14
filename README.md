@@ -54,5 +54,5 @@ docker stop $(docker ps -a -q)
 ## Delete local images
 To delete all local images, run
 ```
-docker stop $(docker ps -a -q)
+docker system prune -a
 ```
