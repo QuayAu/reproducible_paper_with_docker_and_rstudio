@@ -19,18 +19,24 @@ For this tutorial on how to make an R-Project completely reproducible, we only n
 Dockerhub is like GitHub for Docker containers. You can pull openly available docker containers from Dockerhub or push your own docker there. See here https://hub.docker.com/
 
 ## Dockerfile
-The Dockerfile defines what your virtual machine contains. For our purpose, we will use an openly available R-Studio container and install R-packages on there. We will push this container on dockerhub to make this available for colleagues to use.
+The Dockerfile defines what your virtual machine contains. For our purpose, we will use an openly available R-Studio image and install R-packages on there. We will push this image on dockerhub to make this available for colleagues to use.
 You can just copy the Dockerfile into your projects directory and change the Dockerfile to install the packages you need.
 
-## Building your container
+## Building your image
 Just run the following command from your projects directory in the terminal:
 ```
 docker build -t your_projects_name .
 ```
-With the `-t`-option you can name your container as you wish. The build process will take some time.
+With the `-t`-option you can name your image as you wish. The build process will take some time.
 
 ## .dockerignore
 Like in the `.gitignore` file, you can define which files you want to ignore during the build process with the `.dockerignore` file.
 
-## I've built a container, what now?
+## Share your image
+Push your image to dockerhub with:
+```
+docker push your_projects_name
+```
+
+## I've built an image, what now?
 
