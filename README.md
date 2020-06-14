@@ -27,7 +27,7 @@ Just run the following command from your projects directory in the terminal:
 ```
 docker build -t quayau/reproducible_paper_with_docker_and_rstudio .
 ```
-With the `-t`-option you can name your container as you wish. 
+With the `-t`-option you can name your container as you wish. The build process will take some time.
 
 ## .dockerignore
 Like in the `.gitignore` file, you can define which files you want to ignore during the build process with the `.dockerignore` file.
