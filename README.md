@@ -28,3 +28,6 @@ Just run the following command from your projects directory in the terminal:
 docker build -t my_container .
 ```
 With the `-t`-option you can name your container as you wish. 
+
+## .dockerignore
+Like in the `.gitignore` file, you can define which files you want to ignore during the build process with the `.dockerignore` file.
