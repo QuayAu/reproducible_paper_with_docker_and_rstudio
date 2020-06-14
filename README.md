@@ -38,5 +38,8 @@ Push your image to dockerhub with:
 docker push your_projects_name
 ```
 
+I have pushed this image under the name `quayau/reproducible_paper_with_docker_and_rstudio`, available here https://hub.docker.com/repository/docker/quayau/reproducible_paper_with_docker_and_rstudio
+
 ## I've built an image, what now?
+I ha
 
