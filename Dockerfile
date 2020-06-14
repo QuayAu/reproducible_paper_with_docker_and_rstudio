@@ -1,6 +1,8 @@
 FROM rocker/rstudio
 COPY . /home/rstudio
 WORKDIR /home/rstudio
+RUN chown -R rstudio /home/rstudio #write access for user "rstudio"
+
 RUN apt-get update  && apt-get install -y \
   libpq-dev \
   build-essential \
