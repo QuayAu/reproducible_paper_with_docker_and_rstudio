@@ -16,7 +16,7 @@ For this tutorial on how to make an R-Project completely reproducible, we only n
 - https://docs.docker.com/get-docker/
 
 ## Dockerhub
-Dockerhub is like GitHub for Docker containers. You can pull openly available docker containers from Dockerhub or push your own docker there. See here https://hub.docker.com/
+Dockerhub is like GitHub for Docker containers. You can pull openly available docker containers from Dockerhub or push your own docker there. See https://hub.docker.com/
 
 ## Dockerfile
 The Dockerfile defines what your virtual machine contains. For our purpose, we will use an openly available R-Studio image and install R-packages on there. We will push this image on dockerhub to make this available for colleagues to use.
